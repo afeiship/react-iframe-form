@@ -30,7 +30,7 @@ export default class extends PureComponent{
   render(){
     const {className, children, encType, action, method, onSubmit, ...props} = this.props;
     return (
-      <section {...props} className={classNames('react-iframe-form',className)}>
+      <section className={classNames('react-iframe-form',className)}>
           <form
           ref='iframeForm'
           method={method}
